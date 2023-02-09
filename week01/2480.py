@@ -1,0 +1,25 @@
+a,b,c=map(int,input().split())
+mon=0
+if(a==b):
+    if(b==c):
+        mon=10000+a*1000
+    else:
+        mon=1000+a*100
+else:
+    if(b==c):
+        mon=1000+b*100
+    elif(a==c):
+        mon=1000+a*100
+    else:
+        if(a>=b):
+            if(a>=c):
+                mon=a*100
+            else:
+                mon=c*100
+        else:
+            if(b>=c):
+                mon=b*100
+            else:
+                mon=c*100
+print(mon)
+        
